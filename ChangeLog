@@ -1,0 +1,108 @@
+2006-10-30 23:18  kees-guest
+
+	* CHANGES, VERSION.m4, debian/changelog, patches/368106.patch,
+	  src/metar.c: debian #368106
+
+2006-04-25 12:34  kees-guest
+
+	* debian/: changelog, control, copyright, rules: including debian
+	  package metadata in this CVS repository
+
+2006-04-05 22:32  kees-guest
+
+	* VERSION.m4: new version
+
+2006-04-05 22:30  kees-guest
+
+	* CHANGES, ChangeLog, patches/347174.patch, src/main.c,
+	  src/metar.c, src/metar.h: applied patch in BTS bug 347147
+
+2005-08-07 15:33  kees-guest
+
+	* VERSION.m4: patched for possible buffer overflow
+
+2005-08-07 15:29  kees-guest
+
+	* ChangeLog, THANKS, patches/319692.2.patch, .cvsignore,
+	  doc/.cvsignore, src/.cvsignore: patched for possible buffer
+	  overflow
+
+2005-08-07 15:25  kees-guest
+
+	* src/main.c: extra patch for possible security problem
+
+2005-07-25 14:47  kees-guest
+
+	* ChangeLog, THANKS, VERSION.m4, patches/319692.patch, src/main.c:
+	  applied patch bts 319692
+
+2005-07-08 16:36  kees-guest
+
+	* configure.ac: copyright statement to 2005
+
+2005-07-06 16:03  kees-guest
+
+	* ChangeLog, VERSION.m4: version 20050706.1
+
+2005-07-06 15:56  kees-guest
+
+	* patches/303160.patch, patches/317080.patch, src/main.c: bug patch
+	  debian bug 317080
+
+2005-06-30 13:21  kees-guest
+
+	* VERSION.m4: [no log message]
+
+2005-06-23 09:09  kees-guest
+
+	* ChangeLog, Makefile.am, src/main.c, src/metar.c, src/metar.h:
+	  updated copyright statement with year
+
+2005-06-23 09:07  kees-guest
+
+	* README: Reference to Alioth
+
+2005-06-21 18:08  kees-guest
+
+	* VERSION.m4: new version
+
+2005-04-08 09:19  kees-guest
+
+	* NEWS: changes for new release version
+
+2005-04-08 08:57  kees-guest
+
+	* ChangeLog, TODO, doc/metar.pod, src/main.c, src/metar.c,
+	  src/metar.h: cavok now also works
+
+2005-04-07 21:48  kees-guest
+
+	* ChangeLog, src/main.c, src/metar.c, src/metar.h: variable winds
+	  now recognized
+
+2005-04-07 20:46  kees-guest
+
+	* ChangeLog, src/metar.h: Bug report 303160
+
+2005-04-06 22:56  kees-guest
+
+	* ChangeLog, src/main.c: Fixed typo (debian bug 301876)
+
+2005-03-25 09:33  kees-guest
+
+	* ChangeLog, doc/metar.pod: typo fix bug 300947
+
+2005-01-15 11:33  kees-guest
+
+	* AUTHORS, ChangeLog, LICENSE, Makefile.am, NEWS, README, THANKS,
+	  TODO, VERSION.m4, bootstrap, configure.ac, doc/.placeholder,
+	  doc/Makefile.am, doc/metar.pod, src/Makefile.am, src/main.c,
+	  src/metar.c, src/metar.h: Initial public version
+
+2005-01-15 11:33  kees-guest
+
+	* AUTHORS, ChangeLog, LICENSE, Makefile.am, NEWS, README, THANKS,
+	  TODO, VERSION.m4, bootstrap, configure.ac, doc/.placeholder,
+	  doc/Makefile.am, doc/metar.pod, src/Makefile.am, src/main.c,
+	  src/metar.c, src/metar.h: Initial revision
+

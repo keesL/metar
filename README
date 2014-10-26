@@ -1,0 +1,118 @@
+$Id: README,v 1.2 2005/06/23 07:07:18 kees-guest Exp $
+
+METAR reports are meteorogical weather reports for aviation. Metar is a small
+program which downloads weather reports for user-specified stations and
+optionally decodes them into a human-readable format.
+
+Currently, metar supports decoding date/time, wind, visibility, cloud layers,
+temperature, air pressure and weather phenomena, such as rain, fog, etc. Also,
+more work in the area of clouds need to be done, as support for Cumulus or
+Cumulunimbus is not yet decoded.
+
+There is a distinct difference between European METAR reports and US Metar
+reports. A US METAR report typically looks like:
+
+KJFK 141751Z 33017G22KT 10SM FEW050 02/M10 A3005 RMK AO2 SLP174 T00221100
+10033 20017 51007
+
+This METAR can be decoded as follows:
+
+KJFK	    John F. Kennedy Airport, New York, New York, This is the ICAO
+            identifier of the airport.
+
+141751Z     The report is of the 14th of the month, at 17:51Z (which is 12:51pm
+            local time in New York in the winter.)
+
+33017G22KT  The wind is coming from the direction of 330 degrees (Northwest)
+            at 17 knots, with wind gusts to 22 knots.
+
+10SM        Visibility at the ground is clear (10 statue miles or more)
+
+FEW050      FEW clouds at 5000 feet. Few is METAR-speak for 2/8 cloud cover.
+
+02/M10      The temperature is 2 degrees Celcius, with the dewpoint at -10C.
+
+A3005       The altimeter setting (air pressure) is 30.05 inches Hg
+
+RMK etc     Remarks local to the field.
+
+
+
+A European METAR report:
+
+EHAM 141825Z 18010KT 2700 BR SCT003 BKN004 04/04 Q1024 BECMG BKN003
+
+EHAM	 	Amsterdam Schiphol Airport, The Netherlands.
+
+141825Z	    The report is of the 14th of the month, at 18:25Z (which is 19:25
+            local time in Amsterdam in the winter.
+
+18010KT	    The wind is coming from 180 degrees (due South) at 10 knots.
+
+2700        Visibility at ground level is 2700 meters.
+
+BR          Mist (visibility at least 5/8 statue mile)
+
+SCT003      Scattered clouds at 300 ft (SCT is 4/8 cover)
+
+BKN004      Broken clouds at 400 ft (BKN is 5/8 through 7/8 cover)
+
+04/04	    Temperature 4 degrees C, dewpoint 4 C
+
+Q1024	    Air pressure at 1024 hPa
+
+BECMG BKN003 Becoming BK003, cloud layer is changing to BKN at 300 ft.
+
+
+The program currently supports the following command line paramters:
+
+-d 	Decode METARs
+-h  Show a short usage summary
+-v  Be verbose
+
+
+Currently recognized weather phenomena are:
+
+	Descriptors
+		MI	Shallow
+		BL	Blowing
+		BC	Patches
+		SH	Showers
+		PR	Partial
+		DR	Drifting
+		TS	Thunderstorm
+		FZ	Freezing
+		VC Vicinity
+
+	Weather phenomena
+		DZ	Drizzle
+		IC	Ice Crystals
+		UP	Unkniwn
+		RA	Rain
+		PL	Ice Pellets
+		SN	Snow
+		GR	Hail
+		SG	Snow Grains
+		GS	Small hail/snow pellets
+	
+	Obscuration
+		BR	Mist (or vis <= 5/8 sm)
+		SA	Sand
+		FU	Smoke
+		HZ	Haze
+		VA	Volcanic Ash
+		PY	Spray
+		DU	Widespread Dust
+
+	Other
+		SQ	Squall
+		FC	Funnel Cloud
+		SS	Sand storm
+		+FC	Tornado/Watersprout
+		DS	Dust storm
+		PO	Well developed dust/sand swirls
+
+Metar sources and bug tracking are gracefully hosted by the Debian project.
+Please visit http://alioth.debian.org/projects/metar/ for more information.
+
+% END-OF-FILE

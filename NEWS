@@ -1,0 +1,11 @@
+$Id: NEWS,v 1.2 2005/04/08 07:19:21 kees-guest Exp $
+
+08-apr-2005   After receiving a few bug reports and some wishlist items via
+              the Debian bug tracking system, I decided to prepare a new
+			  version of the package. Most important changes:
+
+			  - metar now defaults to HTTP instead of FTP
+			  - download URL is settable via an environment variable
+			  - CAVOK and variables winds are now properly decoded
+
+14-dec-2004	  First version of the metar package.

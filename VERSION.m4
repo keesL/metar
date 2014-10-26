@@ -1,0 +1,1 @@
+m4_define([METAR_VERSION], [20061030.1])

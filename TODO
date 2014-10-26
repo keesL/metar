@@ -1,0 +1,25 @@
+$Id: TODO,v 1.2 2005/04/08 06:57:56 kees-guest Exp $
+
+The following items are still to be done:
+
+20041214.1 - Cloud layer modifier T, CU, CB 
+
+20041214.3 - Vertical Visibility in cloud layer, e.g. VV004
+
+20041223.1 - Make libdecodemetar dynamically linkable. Debian docs at
+http://www.netfort.gr.jp/~dancer/column/libpkg-guide/libpkg-guide.html
+
+20041228.1 - Known broken METARs
+
+	EHAM 281125Z 33019KT 300V360 9999 -RA FEW015 BKN019 OVC034 05/03 Q0999 
+	TEMPO 33023G37KT
+
+	Visibility    : 300 M
+
+	EHAM 281555Z 31014KT 9999 VCSH FEW018CB 05/01 Q1004 TEMPO 32018G28KT 7000
+	-SHRAGS
+
+	Phenomena     : Light Showers Rain Small hail/snow pellets
+	                Light Showers Rain Small hail/snow pellets
+
+
