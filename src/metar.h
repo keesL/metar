@@ -24,7 +24,7 @@
 #define  METAR_MAXSIZE 512
 
 /* where to fetch reports */
-#define  METARURL "http://weather.noaa.gov/pub/data/observations/metar/stations"
+#define  METARURL "http://tgftp.nws.noaa.gov/data/observations/metar/stations"
 
 /* clouds */
 typedef struct {
