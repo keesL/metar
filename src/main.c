@@ -84,6 +84,7 @@ int download_Metar(char *station) {
 	if (verbose) printf("Retrieving URL %s\n", url);
 
     curl_easy_setopt(curlhandle, CURLOPT_URL, url);
+    curl_easy_setopt(curlhandle, CURLOPT_FOLLOWLOCATION, 1);
 	curl_easy_setopt(curlhandle, CURLOPT_WRITEFUNCTION, receiveData);
 	memset(noaabuffer, 0x0, METAR_MAXSIZE);
 
