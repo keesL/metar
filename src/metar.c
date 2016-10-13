@@ -378,8 +378,8 @@ static void analyse_token(char *token, metar_t *metar) {
 	}
 	if (!regexec(&preg, token, 5, pmatch, 0)) {
 		char *obs;
-		obs = malloc(99);
-		memset(obs, 0x0, 99);
+		obs = malloc(100);
+		memset(obs, 0x0, 100);
 
 		size=pmatch[1].rm_eo - pmatch[1].rm_so;
 		memset(tmp, 0x0, 99);

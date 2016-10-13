@@ -36,6 +36,8 @@ B<metar> supports three additional options:
 
 =item B<-h> Show a short help summary
 
+=back
+
 =cut
 
 =head1 ENVIRONMENT
