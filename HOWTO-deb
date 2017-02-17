@@ -1,0 +1,15 @@
+To creata debian package
+
+0. Assign a new version number in VERSION.m4, commit, push
+1. Clone the repository from github
+2. Remove .git/
+3. rename the repository directory as metar-newversion-1
+4. create a new tarball
+	tar c --exclude debian -zf metar_newversion-1.origin.tar.gz
+5. run: dch -v newversion-1
+6. include "New upstream release"
+7. Describe other changes
+8. Build package
+	dpkg-buildpackage -uc -us
+9. Check the package and resolve issues
+	lintian -i -I --show-overrides metar_20161013.1-1_amd64.changes

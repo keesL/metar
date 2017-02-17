@@ -1,0 +1,18 @@
+Source: metar
+Section: utils
+Priority: optional
+Maintainer: Kees Leune <kees@leune.org>
+Standards-Version: 3.9.6
+Build-Depends: libcurl3-gnutls-dev, debhelper (>=9)
+Homepage: http://github.com/keesl/metar
+
+Package: metar
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: utility to download/decode METAR reports
+ Metar is a small utility that will download meteorological reports for
+ aviation from the NOAA HTTP server at weather.noaa.gov and optionally decodes
+ them into a human readable form.
+ .
+ This package is particularly useful is you want to quickly find out what the
+ weather is like in places all over the world and you do not need fancy GUIs.

@@ -1,0 +1,118 @@
+metar (20161013.1-1) unstable; urgency=low
+
+  * New upstream release
+  * fixed error in perlpod and updated buffer alignment
+  * Updated default CURL behavior; will now follow redirects
+  * Changed default URL
+
+ -- Kees Leune <kees@leune.org>  Thu, 16 Feb 2017 20:22:36 -0500
+
+metar (20061030.1-2+deb8u1) jessie; urgency=medium
+
+  * Non-maintainer upload
+  * Import patch for new METAR URL from Kees Leune (Closes: #839907)
+
+ -- Daniel Lange <dl.ml1@usrlocal.de>  Thu, 24 Nov 2016 15:17:56 +0100
+
+metar (20061030.1-2) unstable; urgency=low
+
+  * Build-Depends on libcurl3-gnutls-dev instead of libcurl3-dev
+
+ -- Kees Leune <kees@leune.org>  Sun,  5 Nov 2006 08:51:32 +0100
+
+metar (20061030.1-1) unstable; urgency=low
+
+  * wrong cloud levels (Closes: #368106)
+
+ -- Kees Leune <kees@leune.org>  Mon, 30 Oct 2006 23:18:22 +0100
+
+metar (20050807.1) unstable; urgency=low
+
+  * New upstream release which fixes a potential buffer overflow in main.c
+
+ -- Kees Leune <kees@leune.org>  Sun,  7 Aug 2005 15:32:30 +0200
+
+metar (20050725.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #319692)
+
+ -- Kees Leune <kees@leune.org>  Mon, 25 Jul 2005 19:26:10 +0200
+
+metar (20050706.1-1) unstable; urgency=low
+
+  * New upstream version (Closes: #317080)
+
+ -- Kees Leune <kees@leune.org>  Wed,  6 Jul 2005 16:15:34 +0200
+
+metar (20050622.1-1.1) unstable; urgency=low
+
+  * Non-maintainer upload
+  * debian/control, debian/rules: fix Depends: in control:
+    s/Depends: libcurl3/Depends: ${shlibs:Depends}/; in rules: uncomment
+    dh_shlibdeps (closes: #315781)
+
+ -- Joost van Baal <joostvb@debian.org>  Tue, 05 Jul 2005 07:05:01 +0200
+
+metar (20050622.1-1) unstable; urgency=low
+
+  * Sponsored upload by Joost van Baal <joostvb@mdcc.cx>
+  * Closes: #315218: incorrect use of Architecture: field in source
+    package
+  * Closes: #314475: metar(GNU/kFreeBSD): FTBFS: kfreebsd-i386 not in
+    the architecture list
+  * Closes: #310138: why not arch: any?
+  * Closes: #300947: metar(1) typo
+  * Closes: #301876: Typo, decoded report says &quot;Wind stength&quot;
+  * Closes: #303160: use HTTP rather than FTP
+  * Closes: #301880: Variable wind direction not recognized, CAVOK not
+    recognized
+  * Closes: #315218: incorrect use of Architecture: field in source
+    package
+  * New upstream version
+
+ -- Kees Leune <kees@leune.org>  Tue, 22 Jun 2005 22:53:52 +0200
+
+metar (20050103.1-2) unstable; urgency=low
+
+  * Removed leading 'A' from debian/control for policy conformance.
+
+ -- Kees Leune <kees@leune.org>  Fri, 25 Mar 2005 09:29:45 +0100
+
+metar (20050103.1-1) unstable; urgency=low
+
+  * Closes: #286200: ITP: metar -- A METAR downloader/decoder
+  * New upstream version
+
+ -- Kees Leune <kees@leune.org>  Mon, 03 Jan 2005 20:45:24 +0100
+
+metar (20041228.2-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Kees Leune <kees@leune.org>  Tue, 28 Dec 2004 18:30:00 +0100
+
+metar (20041228.1-1) unstable; urgency=low
+
+  * New upstream version; included weather phenomena
+  * Added build dependency on debhelper to package
+
+ -- Kees Leune <kees@leune.org>  Tue, 28 Dec 2004 17:00:00 +0100
+
+metar (20041223.2-1) unstable; urgency=low
+
+  * Processed comments of joostvb (Thanks!)
+
+ -- Kees Leune <kees@leune.org>  Tue, 23 Dec 2004 11:45:00 +0100
+
+metar (20041223.1-1) unstable; urgency=low
+
+  * Cleaned up package
+  * Split up source code into a re-usable library and an executable
+ 
+ -- Kees Leune <kees@leune.org>  Tue, 23 Dec 2004 11:45:00 +0100
+
+metar (20041215.1-1) unstable; urgency=low
+
+  * Initial packaging for Debian
+
+ -- Kees Leune <kees@leune.org>  Tue, 14 Dec 2004 18:00:00 +0100
