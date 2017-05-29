@@ -1,1 +1,1 @@
-m4_define([METAR_VERSION], [20161013.1])
+m4_define([METAR_VERSION], [20170529.1])

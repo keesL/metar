@@ -201,7 +201,7 @@ static void analyse_token(char *token, metar_t *metar) {
 
 	// find wind
 	if ((int)metar->winddir == 0) {
-		if (regcomp(&preg, "^(VRB|[0-9]{3})([0-9]{2})(G[0-9]+)?(KT)$", 
+		if (regcomp(&preg, "^(VRB|[0-9]{3})([0-9]{2})(G[0-9]+)?(KT|MPS)$", 
 					REG_EXTENDED)) {
 			perror("parseMetar");
 			exit(errno);

@@ -1,3 +1,9 @@
+metar (20170329.1-1) unstable; urgency=low
+
+  * Added mps as wind unit
+
+ -- Kees Leune <kees@leune.org> Mon, 29 May 2017 14:41:25 -0400
+
 metar (20161013.1-1) unstable; urgency=low
 
   * New upstream release
