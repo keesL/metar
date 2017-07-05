@@ -24,7 +24,7 @@ identifier for Amsterdam Schiphol Airport, The Netherlands, etc.
 
 B<metar> requires at least one station identifier to run. A full list of ICAO
 stations is available for download at
-F<http://weather.noaa.gov/data/nsd_bbsss.txt>.
+F<http://tgftp.nws.noaa.gov/data/nsd_bbsss.txt>.
 
 B<metar> supports three additional options:
 
