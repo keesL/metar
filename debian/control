@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Kees Leune <kees@leune.org>
 Standards-Version: 3.9.6
-Build-Depends: libcurl3-gnutls-dev, debhelper (>=9)
+Build-Depends: libcurl4-openssl-dev, debhelper (>=9)
 Homepage: http://github.com/keesl/metar
 
 Package: metar
