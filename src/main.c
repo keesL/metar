@@ -67,6 +67,7 @@ int download_Metar(char *station) {
 	CURLcode res;
     char url[URL_MAXSIZE];
 	char tmp[URL_MAXSIZE];
+	char curlerror[CURL_ERROR_SIZE];
 
     curlhandle = curl_easy_init();
 	if (!curlhandle) return 1;
@@ -86,9 +87,15 @@ int download_Metar(char *station) {
     curl_easy_setopt(curlhandle, CURLOPT_URL, url);
     curl_easy_setopt(curlhandle, CURLOPT_FOLLOWLOCATION, 1);
 	curl_easy_setopt(curlhandle, CURLOPT_WRITEFUNCTION, receiveData);
+	curl_easy_setopt(curlhandle, CURLOPT_ERRORBUFFER, curlerror);
 	memset(noaabuffer, 0x0, METAR_MAXSIZE);
 
 	res = curl_easy_perform(curlhandle);
+	if (res != 0) {
+		fprintf(stderr,"curl error: %s [%d]\n",curl_easy_strerror(res),res);
+		exit(errno);
+	}
+
 	curl_easy_cleanup(curlhandle);
 
     return 0;
