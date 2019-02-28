@@ -1,3 +1,9 @@
+metar (20190227.1-1.1) unstable; urgency=medium
+
+  * Updated default URL to NOAAs new https URL
+
+ -- Kees Leune <kees@leune.org>  Wed, 27 Feb 2019 19:07:51 -0500
+
 metar (20170329.1-1) unstable; urgency=low
 
   * Added mps as wind unit
