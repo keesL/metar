@@ -1,14 +1,24 @@
-metar (20190227.1-1.1) unstable; urgency=medium
+metar (20190227.1-1) unstable; urgency=medium
 
-  * Updated default URL to NOAAs new https URL
+  [ Kees Leune ]
+  * New upstream release (Closes: #921840, thanks Sven Paulus)
+  - Merge pull request #5 from subsven.  This fixes the URL change at
+    NOAA from HTTP to HTTPS.
 
- -- Kees Leune <kees@leune.org>  Wed, 27 Feb 2019 19:07:51 -0500
+  [ Joost van Baal-Ilić ]
+  * debian/source/format: explicitly set to modern 3.0 (quilt).
+  * debian/rules: for now give up updating config.{guess,sub} since it
+    breaks generating a source package.
+  * debian/control: fix Homepage url.
+  * debian/control: add myself to Uploaders, after discussing with Kees.
+
+ -- Joost van Baal-Ilić <joostvb@debian.org>  Sat, 02 Mar 2019 13:56:49 +0000
 
 metar (20170329.1-1) unstable; urgency=low
 
   * Added mps as wind unit
 
- -- Kees Leune <kees@leune.org> Mon, 29 May 2017 14:41:25 -0400
+ -- Kees Leune <kees@leune.org>  Mon, 29 May 2017 14:41:25 -0400
 
 metar (20161013.1-1) unstable; urgency=low
 

@@ -2,9 +2,10 @@ Source: metar
 Section: utils
 Priority: optional
 Maintainer: Kees Leune <kees@leune.org>
+Uploaders: Joost van Baal-Ilić <joostvb@debian.org>
 Standards-Version: 3.9.6
 Build-Depends: libcurl4-openssl-dev, debhelper (>=9)
-Homepage: http://github.com/keesl/metar
+Homepage: http://github.com/keesL/metar
 
 Package: metar
 Architecture: any
