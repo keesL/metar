@@ -1,3 +1,10 @@
+metar (20190227.1-2) unstable; urgency=medium
+
+  * UNRELEASED
+  * debian/rules: use dh.  Fixes github issues/#10.
+
+ -- Joost van Baal-Ilić <joostvb@debian.org>  Mon, 04 Mar 2019 21:06:31 +0100
+
 metar (20190227.1-1) unstable; urgency=medium
 
   [ Kees Leune ]
