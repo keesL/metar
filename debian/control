@@ -15,5 +15,5 @@ Description: utility to download/decode METAR reports
  aviation from the NOAA HTTP server at weather.noaa.gov and optionally decodes
  them into a human readable form.
  .
- This package is particularly useful is you want to quickly find out what the
+ This package is particularly useful if you want to quickly find out what the
  weather is like in places all over the world and you do not need fancy GUIs.

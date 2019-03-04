@@ -4,6 +4,7 @@ metar (20190227.1-2) unstable; urgency=medium
   * debian/rules: use dh.  Fixes github issues/#10.
   * debian/{compat,control}: increment debhelper compatibility level from 9
     to 12.
+  * debian/control: fix typo in long description.
 
  -- Joost van Baal-Ilić <joostvb@debian.org>  Mon, 04 Mar 2019 21:06:31 +0100
 
