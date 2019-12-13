@@ -86,6 +86,7 @@ int download_Metar(char *station) {
     curl_easy_setopt(curlhandle, CURLOPT_URL, url);
     curl_easy_setopt(curlhandle, CURLOPT_FOLLOWLOCATION, 1);
 	curl_easy_setopt(curlhandle, CURLOPT_WRITEFUNCTION, receiveData);
+	if (verbose > 1) curl_easy_setopt(curlhandle, CURLOPT_VERBOSE, 1L);
 	memset(noaabuffer, 0x0, METAR_MAXSIZE);
 
 	res = curl_easy_perform(curlhandle);
@@ -172,7 +173,7 @@ int main(int argc, char* argv[]) {
 				decode=1;
 				break;
 			case 'v':
-				verbose=1;
+				verbose++;
 				break;
 		}
 	}
